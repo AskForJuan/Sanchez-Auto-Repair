@@ -6,8 +6,25 @@
   </head>
   <body>
 <img src="betterlogo.jpg" alt="Sanchez Auto Repair logo" width="300">
+<div id="theme-toggle">
+  <span class="icon">🌙</span>
+</div>
     <h1>Sanchez Auto Repair</h1>
-    <p>Quality repairs, honest prices.</p>
+    <p>Contact us at (707) 321-9486, make sure to ask for Juan for the best consultation.
+ Contáctanos al (707) 321-9486 y pregunta por Juan para una consulta personalizada. </p>
+<section id="mission">
+  <h2>Our Mission / Nuestra Misión</h2>
+  <p>
+    At Sanchez Auto Repair, our mission is to deliver honest, high-quality automotive service 
+    that keeps our community safe and confident on the road. We believe in reliable work, fair prices, 
+    and treating every vehicle like it’s our own. We are a family owned business that aspire to be inclusive of everyone regardless of race, gender, or religion. God Bless
+  </p>
+  <p>
+    En Sanchez Auto Repair, nuestra misión es brindar un servicio automotriz honesto y de alta calidad 
+    que mantenga a nuestra comunidad segura y confiada en el camino. Creemos en un trabajo confiable, 
+    precios justos y en tratar cada vehículo como si fuera nuestro. Somos una empresa familiar que aspira a ser inclusiva con todos, independientemente de su raza, género o religión. Dios los bendiga
+  </p>
+</section>
 <h2>Our Services / Nuestros Servicios</h2>
 <ul>
   <li>Oil Changes / Cambios de Aceite</li>
@@ -58,5 +75,29 @@
     <img src="gal4.jpg" alt="Auto Repair 4">
   </div>
 </section>
-  </body>
+<script>
+  const toggle = document.getElementById('theme-toggle');
+  const icon = document.querySelector('#theme-toggle .icon');
+
+  toggle.addEventListener('click', () => {
+    document.body.classList.toggle('light-mode');
+    if (document.body.classList.contains('light-mode')) {
+      icon.textContent = '☀️';
+    } else {
+      icon.textContent = '🌙';
+    }
+  });
+</script>
+<section id="follow-us">
+  <h2>Follow Us / Síguenos</h2>
+  <p>Stay connected and see our latest work!</p>
+  <a href="https://www.facebook.com/profile.php?id=100057303886168" target="_blank" class="social-link">
+    <img src="facebook.png" alt="Facebook Logo"> Facebook
+  </a>
+</section>
+<footer>
+  <p>&copy; 2025 Sanchez Auto Repair | Mechanica en General</p>
+  <p>3239 Santa Rosa Ave, Santa Rosa, CA 95407 | 📞 (707) 321-9486</p>
+</footer>
+ </body>
 </html>
